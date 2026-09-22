@@ -1,16 +1,4 @@
-graph g4 {
-node [shape="star" style="filled" fillcolor="aqua"];
-edge [fontsize="20pt" color="red"];
-graph g4 {
-    A [pos="10,5!"];
-    B [pos="5,6!"];
-    C [pos="5,3!"];
-    D [pos="3,3!"];
-    E [pos="3,1!"];
-    F [pos="1,2!"];
-    G [pos="1,5!"];
-    H [pos="3,7!"];
-
+graph g3 {
     A -- B [label="1"];
     A -- C [label="4"];
     B -- C [label="2"];
@@ -25,5 +13,4 @@ graph g4 {
     E -- F [label="1"];
     F -- G [label="6"];
     G -- H [label="14"];
-}
 }
