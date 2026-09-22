@@ -1,0 +1,18 @@
+name: graphes
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Installation de graphviz
+        run: sudo apt update && sudo apt install -y graphviz
+
+      - name: Donner les droits d'execution
+        run: chmod +x run1.sh
+
+      - name: Lancement graphviz
+        run: ./run1.sh g1
